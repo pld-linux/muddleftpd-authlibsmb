@@ -1,8 +1,9 @@
 %define         shortname       authlibsmb
 Summary:	Library to SMB authentication for muddleftpd
+Summary(pl):	Biblioteka do autentykacji SMB dla muddleftpd
 Name:		muddleftpd-authlibsmb
 Version:	0.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Daemons
 Group(de):	Server
@@ -18,6 +19,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module allows muddleftpd authenticate using a SMB server.
 
+%description -l pl
+Ten modu³ pozwala muddleftpd autentykowaæ u¿ytkowników korzystaj±c z
+serwera SMB.
+
 %prep
 %setup -q -n %{shortname}-%{version}
 
@@ -28,7 +33,7 @@ autoconf
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -D libauthsmb.so $RPM_BUILD_ROOT/%{_pkglibdir}/libauthsmb.so
+install -D libauthsmb.so $RPM_BUILD_ROOT%{_pkglibdir}/libauthsmb.so
 
 gzip -9nf AUTHORS CHANGES README
 
