@@ -25,7 +25,7 @@ serwera SMB.
 %setup -q -n %{shortname}-%{version}
 
 %build
-autoconf
+%{__autoconf}
 %configure
 %{__make}
 
