@@ -3,11 +3,11 @@ Summary:	Library to SMB authentication for muddleftpd
 Summary(pl):	Biblioteka do autentykacji SMB dla muddleftpd
 Name:		muddleftpd-authlibsmb
 Version:	0.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Daemons
 Source0:	http://www.arach.net.au/~wildfire/muddleftpd/modules/%{shortname}-%{version}.tar.gz
-URL:		http://www.muddleftpd.cx/
+URL:		http://www.arach.net.au/~wildfire/muddleftpd/
 BuildRequires:	autoconf
 Requires:	muddleftpd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,12 +33,10 @@ serwera SMB.
 rm -rf $RPM_BUILD_ROOT
 install -D libauthsmb.so $RPM_BUILD_ROOT%{_pkglibdir}/libauthsmb.so
 
-gzip -9nf AUTHORS CHANGES README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS CHANGES README
 %attr(750,root,root) %{_pkglibdir}/libauthsmb.so
