@@ -7,6 +7,7 @@ Release:	3
 License:	GPL
 Group:		Daemons
 Source0:	http://www.arach.net.au/~wildfire/muddleftpd/modules/%{shortname}-%{version}.tar.gz
+# Source0-md5:	fa435f6d955235e17e1569c079c25e15
 URL:		http://www.arach.net.au/~wildfire/muddleftpd/
 BuildRequires:	autoconf
 Requires:	muddleftpd
