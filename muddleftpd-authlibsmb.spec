@@ -1,6 +1,6 @@
 %define         shortname       authlibsmb
 Summary:	Library to SMB authentication for muddleftpd
-Summary(pl.UTF-8):   Biblioteka do autentykacji SMB dla muddleftpd
+Summary(pl.UTF-8):	Biblioteka do autentykacji SMB dla muddleftpd
 Name:		muddleftpd-authlibsmb
 Version:	0.1
 Release:	3
